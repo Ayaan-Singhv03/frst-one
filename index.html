@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaboration Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Collaboration Hub</h1>
+  </header>
+
+  <main>
+    <div class="video-section">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div class="transcription-section">
+      <h2>Live Transcription</h2>
+      <textarea id="transcription" readonly></textarea>
+      <button id="startButton">Enable Microphone</button>
+<div id="statusIndicator" style="visibility: hidden;">Listening...</div>
+      <div id="statusIndicator">Listening...</div>
+     <button id="toggleRecognition">Pause Recognition</button>
+
+    </div>
+
+    <div class="tasks-section">
+      <h2>Tasks</h2>
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button id="addTaskButton">Add Task</button>
+      <ul id="tasksList"></ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
